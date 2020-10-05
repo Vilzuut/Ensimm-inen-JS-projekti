@@ -6,6 +6,7 @@ var sana = document.getElementById('scsana').value;
 for(var i = 0; i < sana.length; i++)
 {
 
+/*Kirjainten pistemäärät*/
   switch (sana[i])
   {
     case 'a':
@@ -43,6 +44,7 @@ default:
       break;
   }
 }
+/*Lopuksi koodi kertoo annetun sanan/lauseen pistemäärän*/
   document.getElementById('scrabble').innerHTML = " Sanan " + sana + " pisteet ovat: " + pisteet;
 
 }
@@ -51,7 +53,7 @@ default:
 /*Tehtävä 2*/
 
 function arvoNumerot()
-{
+{ /*Arpoo random numeron*/
  var arvottu = Math.floor(Math.random()*7)+1;
  document.getElementById('ltaulu').innerHTML = '<p>'+arvottu+'</p>';
 }
@@ -69,8 +71,8 @@ function muunnaTaulukoksi()
 function annaKortit()
 {
   var pakka = [''];
+  /*Tekee numeroiden eteen kyseisen kortin maan kuvan*/
   var maat = ['&#9828;', '&#9827;', '&#9826;', '&#9825;'];
-  //var maat = ['pa','ri','ru', 'he']
   var numerot = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
   laskuri = 0;
   for(m = 0; m < maat.length; m++)
