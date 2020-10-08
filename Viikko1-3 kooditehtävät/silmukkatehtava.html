@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Silmukka Tehtävä Maanantai 24.8.2020</title>
+    <script type="text/javascript" src="silmukkatehtava.js"></script>
+  </head>
+<body>
+
+<h1>Tehtävä 1</h1>
+  <form action="index.html" method="post">
+    <p>Anna parillinen luku<input type="text" id="pariluku"></p>
+    <button type="button" name="button" onclick="naytaparilliset()">Näytä parilliset</button>
+    <div id="parilliset"></div>
+  </form>
+
+<br>
+<br>
+
+<h1>Tehtävä 2</h1>
+  <form action="index.html" method="post">
+    <p>Anna sana jonka haluat muuttaa salasanaksi<input type="text" id="salasana"></p>
+    <button type="button" name="button" onclick="muutasalasanaksi()">Muuta salasanaksi</button>
+<div id="kerrosalasana"></div>
+  </form>
+
+<br>
+<br>
+
+<h1>Tehtävä 3</h1>
+  <p>Anna sana<input type="text" id="t3sana"></p>
+  <button type="button" name="button" onclick="tarkistasana()">Onko sanassa A kirjaimia</button>
+<div id="vastaus"></div>
+
+<br>
+<br>
+
+<h1>Tehtävä 4</h1>
+  <form action="index.html" method="post">
+    <p>Anna luku<input type="text" id="kerro"></p>
+    <button type="button" name="button" onclick="kerroluku()">Kerro</button>
+<div id="kertovastaus"></div>
+  </form>
+
+<br>
+<br>
+
+<h1>Tehtävä 5</h1>
+  <button type="button" id="button" onclick="hipheijaa()">Näytä</button>
+  <div id="hipluvut"></div>
+
+<br>
+<br>
+
+<h1>Tehtävä 6</h1>
+<button type="button" id="kymmenenlukua" onclick="kymmenenekaa()">Näytä kymmenen ensimmäistä lukua</button>
+<div id="kymmenenluvut"></div>
+
+<br>
+<br>
+
+<h1>Tehtävä 7</h1>
+  <button type="button" id="button" onclick="t7yhteen()">Laske kymmenen ensimmäistä numeroa yhteen</button>
+  <div id="kymmenenyhteen"></div>
+
+<br>
+<br>
+
+<h1>Tehtävä 8</h1>
+  <p>Anna luku<input type="text" id="t8korota"</p>
+  <p>Anna potenssi luku<input type="text" id="t8potennsi"></p>
+  <button type="button" id="button" onclick="potenssi()">Laske potenssi</button>
+<div id="t8potennsivastaus"></div>
+
+<br>
+<br>
+
+<h1>Tehtävä 10</h1>
+  <p>Anna muokattava salasana<input type="text" id="t10salasana">
+    <button type="button" id="button" onclick="teesalasana()">Tee vahvempi salasana</button>
+<div id="t10uusisalis"></div>
+
+<br>
+<br>
+
+<h1>Tehtävä 11</h1>
+  <p>Anna pieni numero<input type="text" id="pieninumero"></p>
+  <p>Anna iso numero<input type="text" id="isonumero"></p>
+  <button type="button" id="button" onclick="naytaluvut()">Näytä parilliset- ja parittomat luvut erikseen, sekä niiden summa</button>
+<div id="lukuparit"></div>
+</body>
+</html>
