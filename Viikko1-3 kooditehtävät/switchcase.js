@@ -12,43 +12,75 @@ function laskepisteet()
     {
     case 'a':
     case 'A':
+    case 'e':
+    case 'E':
+    case 'i':
+    case 'I':
+    case 'n':
+    case 'N':
+    case 's':
+    case 'S':
+    case 't':
+    case 'T':
       piste++;
+      break;
+
+    case 'o':
+    case 'O':
+    case 'ä':
+    case 'Ä':
+    case 'k':
+    case 'K':
+    case 'l':
+    case 'L':
+      piste+=2;
+      break;
+
+      case 'u':
+      case 'U':
+      case 'm':
+      case 'M':
+      piste+=3;
+      break;
+
+    case 'y':
+    case 'Y':
+    case 'h':
+    case 'H':
+    case 'j':
+    case 'J':
+    case 'p':
+    case 'P':
+    case 'r':
+    case 'R':
+    case 'V':
+    case 'v':
+      piste+=4;
+      break;
+
+    case 'ö':
+    case 'Ö':
+    case 'd':
+    case 'D':
+      piste+=7;
       break;
 
     case 'b':
     case 'B':
-      piste+=2;
+    case 'f':
+    case 'F':
+    case 'g':
+    case 'G':
+      piste+=8;
       break;
 
     case 'c':
     case 'C':
-      piste+=3;
-      break;
-
-    case 'd':
-    case 'D':
-      piste+=4;
-      break;
-
-    case 'E':
-    case 'e':
-      piste+=7;
-      break;
-
-    case 'f':
-    case 'F':
       piste+=10;
       break;
 
-    case 'g':
-    case 'G':
-    case 'h':
-    case 'H':
-      piste+=15;
-      break;
-
 default:
-      piste+=20;
+      piste+=12;
       break;
     }
   }
@@ -60,13 +92,13 @@ default:
 /*Tehtävä 2*/
 function arvolotto()
   {
-    var t2numero1 = Math.floor(Math.random()*7)+1;
-    var t2numero2 = Math.floor(Math.random()*7)+1;
-    var t2numero3 = Math.floor(Math.random()*7)+1;
-    var t2numero4 = Math.floor(Math.random()*7)+1;
-    var t2numero5 = Math.floor(Math.random()*7)+1;
-    var t2numero6 = Math.floor(Math.random()*7)+1;
-    var t2numero7 = Math.floor(Math.random()*7)+1;
+    var t2numero1 = Math.floor(Math.random()*35)+1;
+    var t2numero2 = Math.floor(Math.random()*35)+1;
+    var t2numero3 = Math.floor(Math.random()*35)+1;
+    var t2numero4 = Math.floor(Math.random()*35)+1;
+    var t2numero5 = Math.floor(Math.random()*35)+1;
+    var t2numero6 = Math.floor(Math.random()*35)+1;
+    var t2numero7 = Math.floor(Math.random()*35)+1;
 
     document.getElementById('kerrolottonumero').innerHTML = ' ' + t2numero1 + ' ' + t2numero2 + ' ' + t2numero3 + ' ' + ' ' + t2numero4 + ' ' + ' ' + t2numero5 + ' ' + ' ' + t2numero6 + ' ' + ' ' + t2numero7 + ' ';
   }
